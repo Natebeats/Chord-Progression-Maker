@@ -1,0 +1,150 @@
+I want to build a Chord Progression Maker in Python. Please generate the full code for this app, step by step.
+
+Core Requirements:
+
+Scales & Keys
+
+Support all 12 major and 12 minor keys.
+
+Generate diatonic chords (I, ii, iii, IV, V, vi, vii°) for each scale.
+
+Chord Types / Variations
+
+Basic triads (major, minor, diminished).
+
+Extended and altered chords:
+
+Dominant seventh (1–3–5–b7)
+
+Major seventh (1–3–5–7)
+
+Minor seventh (1–b3–5–b7)
+
+Half-diminished seventh (1–b3–b5–b7)
+
+Diminished seventh (1–b3–b5–bb7)
+
+Altered chords (flat/sharp 5, flat/sharp 9, sharp 11, flat 13).
+
+Chord Inversions & Voice Leading
+
+Allow root, 1st, 2nd, 3rd inversion.
+
+Option to optimize progressions with smooth voice leading (shortest note movements between chords).
+
+Rhythm Patterns
+
+Export/playback options:
+
+Block chords (whole notes)
+
+Arpeggios (broken chords)
+
+Waltz / pop strumming patterns (bass note + chord stabs)
+
+Style Presets
+
+One-click generators for common genres:
+
+Pop: I–V–vi–IV
+
+Jazz: ii–V–I
+
+Blues: I7–IV7–V7
+
+Lo-Fi / modal: i–VII–VI–VII
+
+MIDI & Saving
+
+MIDI Export
+
+Generate .mid files with mido.
+
+Each chord should play for a set duration (configurable, e.g., half notes).
+
+Rhythm patterns (see above) must be reflected in the MIDI export.
+
+Playback
+
+Optional: use pygame.midi or fluidsynth with a piano soundfont to preview chords directly inside Python.
+
+Saving & Loading
+
+Save chord progressions (both human-readable chord names and MIDI data).
+
+Load saved progressions and re-export them later.
+
+Interface / Usage
+
+Command-line based app.
+
+Workflow example:
+
+User selects a key (e.g., G minor).
+
+User selects number of chords (4, 8, etc.).
+
+User chooses progression style: random, manual, or preset (pop/jazz/blues).
+
+App generates progression with chord symbols, inversions, and optional voice leading.
+
+User can:
+
+Play back chords inside Python
+
+Export to MIDI with rhythm patterns
+
+Save the progression to a file
+
+Deliverables
+
+Full Python script with comments.
+
+Example run: outputs a progression and creates a MIDI file.
+
+Functions for:
+
+Generating chords in any key
+
+Applying inversions / voice leading
+
+Saving & loading progressions
+
+Exporting multiple MIDI variations (block, arpeggio, etc.)
+
+🧪 Example Test Scenario
+
+Here is an example of how the program should behave when running:
+
+Welcome to Chord Progression Maker!
+
+Choose a key: G minor
+How many chords? 4
+Choose a mode: [1] Random progression, [2] Manual selection, [3] Preset
+> 3
+Choose a preset: Jazz (ii–V–I)
+
+Generated progression:
+Am7b5 – D7 – Gm7 – Cmaj7
+
+Chord tones:
+Am7b5 = A C Eb G
+D7 = D F# A C
+Gm7 = G Bb D F
+Cmaj7 = C E G B
+
+Options:
+1. Play progression
+2. Export MIDI (block / arpeggio / waltz)
+3. Save progression
+> 2
+
+Exported to Gm_Jazz_Progression.mid ✅
+
+
+The user can then open the generated MIDI file in any DAW or media player.
+
+If they choose “Save progression,” it should be written to a JSON/text file for later recall.
+
+✨ This app should be offline, free, and simple to use, with no ads or tracking.
+The goal is to create an honest tool for musicians that makes it easy to generate chord progressions, learn harmony, and export ideas for real music projects.
