@@ -28,7 +28,5 @@ Am7 – Dm7 – G7 – Cmaj7
 
 Save it for later, or export as a MIDI file and drop it into your DAW.
 
-Why this app?
-
 Most chord tools are bloated, paywalled, or tied to specific DAWs.
-This one is free, offline, and honest — just good music software.
+This one is free, offline, and honest, good music software.
